@@ -88,22 +88,49 @@
     opacity: 1;
 }
 
+@media screen and (max-width: 768px) {
+    .container {
+        padding-left: 5%;
+    }
 
-.input-box::-webkit-scrollbar {
-    width: 8px;
+    .container h1 {
+        font-size: 28px;
+    }
+
+    .container button {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+
+    .input-box {
+        padding: 15px;
+    }
+
+    .input-box img {
+        width: 20px;
+        bottom: 10px;
+        right: 10px;
+    }
 }
 
-.input-box::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 10px;
+@media screen and (max-width: 480px) {
+    .container {
+        padding-top: 10%;
+    }
+
+    .container h1 {
+        font-size: 24px;
+    }
+
+    .container button {
+        font-size: 12px;
+        padding: 10px 15px;
+        margin: 20px 0 15px;
+    }
+
+    .input-box {
+        max-width: 100%;
+    }
 }
 
-.input-box::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 10px;
-}
-
-.input-box::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
 
